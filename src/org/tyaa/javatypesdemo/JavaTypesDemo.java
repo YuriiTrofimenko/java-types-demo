@@ -128,7 +128,7 @@ public class JavaTypesDemo {
             case 8: 
             case 9: System.out.println("Voron");
         } */
-        System.out.println("Input an integer number from 0 to infinity:");
+        /*System.out.println("Input an integer number from 0 to infinity:");
         
         Scanner sc = new Scanner(System.in);
         int number = sc.nextInt();
@@ -151,7 +151,7 @@ public class JavaTypesDemo {
                 case 8: 
                 case 9: System.out.println("Voron");
             }
-        }
+        }*/
         
         // Test change
         
@@ -165,6 +165,62 @@ public class JavaTypesDemo {
         //2. разбить решение на две части:
         //первая решает задачу,
         //вторая - осуществляет диалог с пользователем в консоли
+        
+        /* String s1 = "1" + "a" + "fghgfjhj";
+        String s2 =
+                new StringBuilder()
+                        .append("1")
+                        .append("a")
+                        .append("fghgfjhj")
+                        .toString();
+        
+        System.out.println(s2);*/
+        
+        /* Java Strings */
+        
+        /* Object o1 = new Object();
+        String s1 = "1"; // new String("1");
+        String s2 = new String("2"); */
+        //String s3 = new String(); // Bad!
+        
+        //String s1 = "Hello World!";
+        //String s2 = "Hello World!"; // String s2 = s1;
+        
+        /* Scanner sc = new Scanner(System.in);
+        System.out.println("s1 = ");
+        String s1 = sc.nextLine();
+        System.out.println("s2 = ");
+        String s2 = sc.nextLine(); */
+        
+        //String s1 = String.copyValueOf("Hello World!".toCharArray());
+        //String s2 = String.copyValueOf("Hello World!".toCharArray());
+                
+        /*String s1 = new String("Hello World!");
+        String s2 = new String("Hello World!");
+        
+        System.out.println(s1 == s2);
+        System.out.println(s1.equals(s2));*/
+        
+        int[] arr1 = new int[3];
+        int[] arr2 = {};
+        int[] arr3 = {1, 0, 5, -11};
+        
+        // fore + Tab
+        /*for (int i : arr1) {
+            System.out.println(i);
+        }*/
+        
+        int[][] twoDimArr1 = new int[3][];
+        twoDimArr1[0] = arr1;
+        twoDimArr1[1] = arr2;
+        twoDimArr1[2] = arr3;
+        
+        for (int[] array : twoDimArr1) {
+            for (int i : array) {
+                System.out.print(i + " ");
+            }
+            System.out.println("");
+        }
     }
     
 }
